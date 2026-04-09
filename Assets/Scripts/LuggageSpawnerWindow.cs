@@ -154,7 +154,7 @@ public class LuggageSpawnerWindow : EditorWindow
     private List<GameObject> GenerateBlocks(int size)
     {
         List<GameObject> blocks = new List<GameObject>();
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < size; i++)
         {
             GameObject block = (GameObject)PrefabUtility.InstantiatePrefab(prefabToUse);
             block.transform.localScale = Vector3.one * blockSize;
